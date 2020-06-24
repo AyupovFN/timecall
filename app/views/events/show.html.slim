@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Datetime:
+  = @event.datetime
+p
+  strong Service:
+  = @event.service_id
+p
+  strong Student:
+  = @event.student
+
+=> link_to 'Edit', edit_event_path(@event)
+'|
+=< link_to 'Back', events_path
