@@ -1,14 +1,17 @@
 p#notice = notice
 
 p
-  strong Datetime:
-  = @event.datetime
+  strong Start_at:
+  = @event.start_at
 p
   strong Service:
   = @event.service_id
 p
   strong Student:
   = @event.student
+p
+  strong Recurring:
+  = @event.recurring
 
 => link_to 'Edit', edit_event_path(@event)
 '|

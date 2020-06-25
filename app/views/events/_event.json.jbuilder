@@ -1,2 +1,2 @@
-json.extract! event, :id, :datetime, :service_id, :student, :created_at, :updated_at
+json.extract! event, :id, :start_at, :service_id, :student, :recurring, :created_at, :updated_at
 json.url event_url(event, format: :json)

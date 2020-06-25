@@ -3,19 +3,20 @@ h1 Listing events
 table
   thead
     tr
-      th Datetime
+      th Start_at
       th Service
       th Student
-      th
+      th Recurring
       th
       th
 
   tbody
     - @events.each do |event|
       tr
-        td = event.datetime
+        td = event.start_at
         td = event.service_id
         td = event.student
+        td = event.recurring
         td = link_to 'Show', event
         td = link_to 'Edit', edit_event_path(event)
         td = link_to 'Destroy', event, data: { confirm: 'Are you sure?' }, method: :delete

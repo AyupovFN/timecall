@@ -13,9 +13,10 @@
 ActiveRecord::Schema.define(version: 2020_06_24_172131) do
 
   create_table "events", force: :cascade do |t|
-    t.datetime "datetime"
+    t.datetime "start_at"
     t.integer "service_id"
     t.text "student"
+    t.text "recurring"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
